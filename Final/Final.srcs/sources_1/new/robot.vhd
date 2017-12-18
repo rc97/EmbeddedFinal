@@ -91,23 +91,23 @@ begin
                 when u =>
                     sp1 <= speed;
                     sp2 <= speed;
-                    en1 <= '1';
-                    en2 <= '0';
+                    dir1 <= '1';
+                    dir2 <= '0';
                 when d =>
                     sp1 <= speed;
                     sp2 <= speed;
-                    en1 <= '0';
-                    en2 <= '1';
+                    dir1 <= '0';
+                    dir2 <= '1';
                 when l =>
                     sp1 <= speed;
                     sp2 <= speed;
-                    en1 <= '1';
-                    en2 <= '1';
+                    dir1 <= '1';
+                    dir2 <= '1';
                 when r =>
                     sp1 <= speed;
                     sp2 <= speed;
-                    en1 <= '0';
-                    en2 <= '0';
+                    dir1 <= '0';
+                    dir2 <= '0';
             end case;
         end if;
     end process;
