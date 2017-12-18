@@ -13,7 +13,7 @@ architecture pwm of pwm is
 begin
     process(clk) begin
         if rising_edge(clk) then
-            if count = to_unsigned(255, 8) then
+            if count = to_unsigned(254, 8) then
                 count <= (others => '0');
             else
                 count <= count + to_unsigned(1, 8);
