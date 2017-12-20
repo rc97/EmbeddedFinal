@@ -1,6 +1,6 @@
 Vivado Simulator 2017.2
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 883feeae0ec24ae0a3fcef6c3634941c --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot pwm_sim_behav xil_defaultlib.pwm_sim -log elaborate.log 
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 883feeae0ec24ae0a3fcef6c3634941c --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot robotsim_behav xil_defaultlib.robotsim -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -11,6 +11,11 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
+Compiling architecture cnt of entity xil_defaultlib.clock_div [clock_div_default]
+Compiling architecture fsm of entity xil_defaultlib.uart_rx [uart_rx_default]
+Compiling architecture t of entity xil_defaultlib.uart_tx [uart_tx_default]
+Compiling architecture structural of entity xil_defaultlib.uart [uart_default]
 Compiling architecture pwm of entity xil_defaultlib.pwm [pwm_default]
-Compiling architecture behavioral of entity xil_defaultlib.pwm_sim
-Built simulation snapshot pwm_sim_behav
+Compiling architecture bot of entity xil_defaultlib.robot [robot_default]
+Compiling architecture behavioral of entity xil_defaultlib.robotsim
+Built simulation snapshot robotsim_behav

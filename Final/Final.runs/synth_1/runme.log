@@ -14,19 +14,19 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010-clg400'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010-clg400'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 3872 
+INFO: Helper process launched with PID 9884 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 301.805 ; gain = 82.664
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 301.527 ; gain = 82.355
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'robot' [C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/new/robot.vhd:13]
-INFO: [Synth 8-3491] module 'pwm' declared at 'C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/new/pwm.vhd:5' bound to instance 'pwm1' of component 'pwm' [C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/new/robot.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'robot' [C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/new/robot.vhd:14]
+INFO: [Synth 8-3491] module 'pwm' declared at 'C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/new/pwm.vhd:5' bound to instance 'pwm1' of component 'pwm' [C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/new/robot.vhd:49]
 INFO: [Synth 8-638] synthesizing module 'pwm' [C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/new/pwm.vhd:11]
 INFO: [Synth 8-256] done synthesizing module 'pwm' (1#1) [C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/new/pwm.vhd:11]
-INFO: [Synth 8-3491] module 'pwm' declared at 'C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/new/pwm.vhd:5' bound to instance 'pwm2' of component 'pwm' [C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/new/robot.vhd:49]
-INFO: [Synth 8-3491] module 'clock_div' declared at 'C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/imports/new/clock_div_115200.vhd:5' bound to instance 'cd115200' of component 'clock_div' [C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/new/robot.vhd:54]
+INFO: [Synth 8-3491] module 'pwm' declared at 'C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/new/pwm.vhd:5' bound to instance 'pwm2' of component 'pwm' [C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/new/robot.vhd:54]
+INFO: [Synth 8-3491] module 'clock_div' declared at 'C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/imports/new/clock_div_115200.vhd:5' bound to instance 'cd115200' of component 'clock_div' [C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/new/robot.vhd:59]
 INFO: [Synth 8-638] synthesizing module 'clock_div' [C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/imports/new/clock_div_115200.vhd:12]
 INFO: [Synth 8-256] done synthesizing module 'clock_div' (2#1) [C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/imports/new/clock_div_115200.vhd:12]
-INFO: [Synth 8-3491] module 'uart' declared at 'C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/imports/sources_1/uart.vhd:4' bound to instance 'uart_dut' of component 'uart' [C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/new/robot.vhd:58]
+INFO: [Synth 8-3491] module 'uart' declared at 'C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/imports/sources_1/uart.vhd:4' bound to instance 'uart_dut' of component 'uart' [C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/new/robot.vhd:63]
 INFO: [Synth 8-638] synthesizing module 'uart' [C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/imports/sources_1/uart.vhd:12]
 INFO: [Synth 8-3491] module 'uart_rx' declared at 'C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/imports/sources_1/rx.vhd:5' bound to instance 'r_x' of component 'uart_rx' [C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/imports/sources_1/uart.vhd:31]
 INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/imports/sources_1/rx.vhd:13]
@@ -39,10 +39,10 @@ WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sen
 WARNING: [Synth 8-614] signal 'en' is read in the process but is not in the sensitivity list [C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/imports/sources_1/tx.vhd:20]
 INFO: [Synth 8-256] done synthesizing module 'uart_tx' (4#1) [C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/imports/sources_1/tx.vhd:12]
 INFO: [Synth 8-256] done synthesizing module 'uart' (5#1) [C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/imports/sources_1/uart.vhd:12]
-WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/new/robot.vhd:69]
-INFO: [Synth 8-256] done synthesizing module 'robot' (6#1) [C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/new/robot.vhd:13]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/new/robot.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'robot' (6#1) [C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/new/robot.vhd:14]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 351.926 ; gain = 132.785
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 352.938 ; gain = 133.766
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -52,7 +52,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 351.926 ; gain = 132.785
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 352.938 ; gain = 133.766
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -86,28 +86,28 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 681.871 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 681.891 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 681.871 ; gain = 462.730
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 681.891 ; gain = 462.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 681.871 ; gain = 462.730
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 681.891 ; gain = 462.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 681.871 ; gain = 462.730
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 681.891 ; gain = 462.719
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "div" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "curr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "curr" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 681.871 ; gain = 462.730
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 681.891 ; gain = 462.719
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -121,27 +121,29 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     11 Bit       Adders := 1     
-	   2 Input      8 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 4     
 	   2 Input      3 Bit       Adders := 2     
 +---Registers : 
 	               11 Bit    Registers := 1     
 	                8 Bit    Registers := 7     
+	                5 Bit    Registers := 1     
 	                4 Bit    Registers := 2     
 	                3 Bit    Registers := 2     
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 5     
 +---Muxes : 
 	   2 Input     11 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 2     
-	  10 Input      8 Bit        Muxes := 2     
-	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 6     
+	  18 Input      8 Bit        Muxes := 2     
+	  18 Input      5 Bit        Muxes := 1     
+	  20 Input      4 Bit        Muxes := 1     
 	   4 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
 	   4 Input      1 Bit        Muxes := 8     
 	   5 Input      1 Bit        Muxes := 1     
-	  10 Input      1 Bit        Muxes := 4     
+	  18 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -151,14 +153,20 @@ Start RTL Hierarchical Component Statistics
 Hierarchical RTL Component report 
 Module robot 
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
 +---Registers : 
 	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
 	                1 Bit    Registers := 2     
 +---Muxes : 
-	  10 Input      8 Bit        Muxes := 2     
-	   2 Input      4 Bit        Muxes := 1     
-	  10 Input      1 Bit        Muxes := 4     
+	  18 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 4     
+	  18 Input      5 Bit        Muxes := 1     
+	  20 Input      4 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
 Module pwm 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -221,6 +229,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6014] Unused sequential element uart_dut/t_x/ready_reg was removed.  [C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/imports/sources_1/tx.vhd:24]
 INFO: [Synth 8-5546] ROM "cd115200/div" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "curr" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-3886] merging instance 'uart_dut/t_x/sendChar_reg[7]' (FDE) to 'uart_dut/t_x/sendChar_reg[6]'
 INFO: [Synth 8-3886] merging instance 'uart_dut/t_x/sendChar_reg[6]' (FDE) to 'uart_dut/t_x/sendChar_reg[5]'
 INFO: [Synth 8-3886] merging instance 'uart_dut/t_x/sendChar_reg[5]' (FDE) to 'uart_dut/t_x/sendChar_reg[4]'
@@ -229,24 +238,31 @@ INFO: [Synth 8-3886] merging instance 'uart_dut/t_x/sendChar_reg[3]' (FDE) to 'u
 INFO: [Synth 8-3886] merging instance 'uart_dut/t_x/sendChar_reg[2]' (FDE) to 'uart_dut/t_x/sendChar_reg[1]'
 INFO: [Synth 8-3886] merging instance 'uart_dut/t_x/sendChar_reg[1]' (FDE) to 'uart_dut/t_x/sendChar_reg[0]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart_dut/t_x/sendChar_reg[0] )
-INFO: [Synth 8-3886] merging instance 'sp2_reg[0]' (FDE) to 'sp2_reg[1]'
-INFO: [Synth 8-3886] merging instance 'sp2_reg[1]' (FDE) to 'sp2_reg[2]'
-INFO: [Synth 8-3886] merging instance 'sp2_reg[2]' (FDE) to 'sp2_reg[4]'
-INFO: [Synth 8-3886] merging instance 'sp2_reg[3]' (FDE) to 'sp2_reg[6]'
-INFO: [Synth 8-3886] merging instance 'sp2_reg[4]' (FDE) to 'sp2_reg[5]'
-INFO: [Synth 8-3886] merging instance 'sp2_reg[5]' (FDE) to 'sp1_reg[0]'
-INFO: [Synth 8-3886] merging instance 'sp2_reg[6]' (FDE) to 'sp2_reg[7]'
-INFO: [Synth 8-3886] merging instance 'sp1_reg[0]' (FDE) to 'sp1_reg[1]'
-INFO: [Synth 8-3886] merging instance 'sp1_reg[1]' (FDE) to 'sp1_reg[2]'
-INFO: [Synth 8-3886] merging instance 'sp1_reg[2]' (FDE) to 'sp1_reg[4]'
-INFO: [Synth 8-3886] merging instance 'sp1_reg[3]' (FDE) to 'sp1_reg[6]'
-INFO: [Synth 8-3886] merging instance 'sp1_reg[4]' (FDE) to 'sp1_reg[5]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sp1_reg[5] )
-INFO: [Synth 8-3886] merging instance 'sp1_reg[6]' (FDE) to 'sp1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'led_reg[1]' (FDE) to 'led_reg[3]'
 WARNING: [Synth 8-3332] Sequential element (uart_dut/t_x/sendChar_reg[0]) is unused and will be removed from module robot.
-WARNING: [Synth 8-3332] Sequential element (sp1_reg[5]) is unused and will be removed from module robot.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 681.871 ; gain = 462.730
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 681.891 ; gain = 462.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|robot       | dir1       | 32x1          | LUT            | 
+|robot       | dir1       | 32x1          | LUT            | 
+|robot       | dir2       | 32x1          | LUT            | 
+|robot       | dir2       | 32x1          | LUT            | 
+|robot       | dir1       | 32x1          | LUT            | 
+|robot       | dir1       | 32x1          | LUT            | 
+|robot       | dir2       | 32x1          | LUT            | 
+|robot       | dir2       | 32x1          | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -258,13 +274,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 681.871 ; gain = 462.730
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 681.891 ; gain = 462.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 688.523 ; gain = 469.383
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 694.906 ; gain = 475.734
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -276,7 +292,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 697.555 ; gain = 478.414
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 703.938 ; gain = 484.766
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -300,7 +316,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 697.555 ; gain = 478.414
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 703.938 ; gain = 484.766
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -313,7 +329,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 697.555 ; gain = 478.414
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 703.938 ; gain = 484.766
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -325,25 +341,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 697.555 ; gain = 478.414
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 703.938 ; gain = 484.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 697.555 ; gain = 478.414
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 703.938 ; gain = 484.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 697.555 ; gain = 478.414
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 703.938 ; gain = 484.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 697.555 ; gain = 478.414
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 703.938 ; gain = 484.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -361,37 +377,38 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     1|
 |2     |CARRY4 |     2|
-|3     |LUT1   |     1|
-|4     |LUT2   |     9|
-|5     |LUT3   |    16|
-|6     |LUT4   |     9|
-|7     |LUT5   |    19|
-|8     |LUT6   |    23|
-|9     |FDCE   |    23|
+|3     |LUT1   |     4|
+|4     |LUT2   |    14|
+|5     |LUT3   |    13|
+|6     |LUT4   |    33|
+|7     |LUT5   |    22|
+|8     |LUT6   |    51|
+|9     |FDCE   |    24|
 |10    |FDPE   |     1|
-|11    |FDRE   |    43|
-|12    |IBUF   |     3|
-|13    |OBUF   |     5|
+|11    |FDRE   |    56|
+|12    |FDSE   |     4|
+|13    |IBUF   |     3|
+|14    |OBUF   |     9|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+-----------+----------+------+
 |      |Instance   |Module    |Cells |
 +------+-----------+----------+------+
-|1     |top        |          |   155|
-|2     |  cd115200 |clock_div |    26|
-|3     |  pwm1     |pwm       |    25|
-|4     |  pwm2     |pwm_0     |    25|
-|5     |  uart_dut |uart      |    56|
-|6     |    r_x    |uart_rx   |    42|
+|1     |top        |          |   237|
+|2     |  cd115200 |clock_div |    34|
+|3     |  pwm1     |pwm       |    32|
+|4     |  pwm2     |pwm_0     |    30|
+|5     |  uart_dut |uart      |    57|
+|6     |    r_x    |uart_rx   |    43|
 |7     |    t_x    |uart_tx   |    14|
 +------+-----------+----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 697.555 ; gain = 478.414
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 703.938 ; gain = 484.766
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 697.555 ; gain = 148.469
-Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 697.555 ; gain = 478.414
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 703.938 ; gain = 155.813
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 703.938 ; gain = 484.766
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -400,9 +417,9 @@ INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-55 Infos, 14 Warnings, 6 Critical Warnings and 0 Errors encountered.
+43 Infos, 13 Warnings, 6 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 697.555 ; gain = 486.078
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 703.938 ; gain = 492.055
 INFO: [Common 17-1381] The checkpoint 'C:/CodingProjects/EmbeddedFinal/Final/Final.runs/synth_1/robot.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 697.555 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Dec 19 20:15:17 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 703.938 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 20 18:41:57 2017...

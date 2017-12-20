@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date             : Tue Dec 19 20:16:06 2017
+| Date             : Wed Dec 20 18:42:45 2017
 | Host             : MADCAP running 64-bit major release  (build 9200)
 | Command          : report_power -file robot_power_routed.rpt -pb robot_power_summary_routed.pb -rpx robot_power_routed.rpx
 | Design           : robot
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+--------+
-| Total On-Chip Power (W)  | 0.106  |
-| Dynamic (W)              | 0.003  |
+| Total On-Chip Power (W)  | 0.112  |
+| Dynamic (W)              | 0.009  |
 | Device Static (W)        | 0.103  |
 | Effective TJA (C/W)      | 11.5   |
-| Max Ambient (C)          | 83.8   |
-| Junction Temperature (C) | 26.2   |
+| Max Ambient (C)          | 83.7   |
+| Junction Temperature (C) | 26.3   |
 | Confidence Level         | Medium |
 | Setting File             | ---    |
 | Simulation Activity File | ---    |
@@ -50,15 +50,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      157 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       57 |     17600 |            0.32 |
-|   Register     |    <0.001 |       67 |     35200 |            0.19 |
+| Slice Logic    |    <0.001 |      235 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      106 |     17600 |            0.60 |
+|   Register     |    <0.001 |       86 |     35200 |            0.24 |
 |   CARRY4       |    <0.001 |        2 |      4400 |            0.05 |
-|   Others       |     0.000 |       11 |       --- |             --- |
-| Signals        |    <0.001 |       93 |       --- |             --- |
-| I/O            |    <0.001 |        8 |       100 |            8.00 |
+|   Others       |     0.000 |       10 |       --- |             --- |
+| Signals        |    <0.001 |      149 |       --- |             --- |
+| I/O            |     0.007 |       12 |       100 |           12.00 |
 | Static Power   |     0.103 |          |           |                 |
-| Total          |     0.106 |          |           |                 |
+| Total          |     0.112 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -68,9 +68,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.006 |       0.002 |      0.004 |
+| Vccint    |       1.000 |     0.006 |       0.003 |      0.004 |
 | Vccaux    |       1.800 |     0.011 |       0.000 |      0.011 |
-| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
+| Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -144,7 +144,7 @@ Table of Contents
 +------------+-----------+
 | Name       | Power (W) |
 +------------+-----------+
-| robot      |     0.003 |
+| robot      |     0.009 |
 |   cd115200 |    <0.001 |
 |   pwm1     |    <0.001 |
 |   pwm2     |    <0.001 |

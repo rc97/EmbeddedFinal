@@ -1,0 +1,7 @@
+Running: xsim.dir/robotsim_behav/xsimk.exe -simmode gui -wdb robotsim_behav.wdb -simrunnum 0 -socket 60539
+Design successfully loaded
+Design Loading Memory Usage: 6244 KB (Peak: 6244 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 14864 KB (Peak: 14864 KB)
+Simulation CPU Usage: 23327 ms

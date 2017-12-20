@@ -6,6 +6,8 @@ import time
 port = 'COM10'
 baud = 112500
 
+acc_commands = {1: 'z', 2: 'x', 3: 'c', 4: 'a', 5: '5', 6: 'd', 7: 'q', 8: 'w', 9: 'e'}
+
 if __name__ == '__main__':
 	pygame.init()
 	size = (200, 200)
@@ -13,9 +15,14 @@ if __name__ == '__main__':
 	pygame.display.set_caption("Robot Controller")
 	pygame.key.set_repeat(1, 1)
 	s = serial.Serial(port=port, baudrate=baud)
+	acc_mode = False
+	# acc_key = False
 	while(True):
 		cmd = 5
 		keys = pygame.key.get_pressed()
+		# if keys[pygame.K_f] and not acc_key:
+		# 	acc_mode = not acc_mode
+		# acc_key = keys[pygame.K_f]
 		if keys[pygame.K_UP]:
 			cmd = 8
 			# print('up')
@@ -30,9 +37,13 @@ if __name__ == '__main__':
 			cmd += 1
 			# print('right')
 
-		print(cmd)
+		print(cmd, acc_mode)
+		if acc_mode:
+			ch = acc_commands[cmd]
+		else:
+			ch = str(cmd)
 		# If any other key is pressed, assume stop
-		s.write(str(cmd).encode())
+		s.write(ch.encode())
 
 		if keys[pygame.K_q]:
 			pygame.quit()
@@ -42,5 +53,8 @@ if __name__ == '__main__':
 			if event.type == pygame.QUIT:
 				pygame.quit()
 				sys.exit()
+			if event.type == pygame.KEYDOWN:
+				if event.key == pygame.K_f:
+					acc_mode = not acc_mode
 
 		time.sleep(0.05)

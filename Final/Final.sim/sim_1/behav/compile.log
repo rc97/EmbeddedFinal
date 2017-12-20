@@ -1,4 +1,14 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Classes/Embedded/EmbeddedFinal/Final/Final.srcs/sources_1/new/pwm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/imports/new/clock_div_115200.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clock_div
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/new/pwm.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity pwm
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Classes/Embedded/EmbeddedFinal/Final/Final.srcs/sim_1/new/pwm_sim.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity pwm_sim
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/imports/sources_1/rx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity uart_rx
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/imports/sources_1/tx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity uart_tx
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/new/robot.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity robot
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/imports/sources_1/uart.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity uart
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sim_1/new/robotsim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity robotsim

@@ -2,5 +2,10 @@
 2017.2
 Jun 15 2017
 18:52:51
-D:/Classes/Embedded/EmbeddedFinal/Final/Final.srcs/sim_1/new/pwm_sim.vhd,1513556837,vhdl,,,,pwm_sim,,,,,,,,
-D:/Classes/Embedded/EmbeddedFinal/Final/Final.srcs/sources_1/new/pwm.vhd,1513557063,vhdl,,,,pwm,,,,,,,,
+C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sim_1/new/robotsim.vhd,1513810223,vhdl,,,,robotsim,,,,,,,,
+C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/imports/new/clock_div_115200.vhd,1513557375,vhdl,,,,clock_div,,,,,,,,
+C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/imports/sources_1/rx.vhd,1513557375,vhdl,,,,uart_rx,,,,,,,,
+C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/imports/sources_1/tx.vhd,1513557375,vhdl,,,,uart_tx,,,,,,,,
+C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/imports/sources_1/uart.vhd,1513557375,vhdl2008,,,,uart,,,,,,,,
+C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/new/pwm.vhd,1513565612,vhdl,,,,pwm,,,,,,,,
+C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/sources_1/new/robot.vhd,1513809901,vhdl2008,,,,robot,,,,,,,,

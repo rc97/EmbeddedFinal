@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Tue Dec 19 20:16:06 2017
+| Date         : Wed Dec 20 18:42:45 2017
 | Host         : MADCAP running 64-bit major release  (build 9200)
 | Command      : report_methodology -file robot_methodology_drc_routed.rpt -rpx robot_methodology_drc_routed.rpx
 | Design       : robot
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 7
+             Violations found: 11
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
-| TIMING-18 | Warning  | Missing input or output delay | 7          |
+| TIMING-18 | Warning  | Missing input or output delay | 11         |
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
@@ -63,6 +63,26 @@ An output delay is missing on en2 relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on led[0] relative to clock(s) sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on led[1] relative to clock(s) sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on led[2] relative to clock(s) sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on led[3] relative to clock(s) sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#11 Warning
 Missing input or output delay  
 An output delay is missing on rxd relative to clock(s) sys_clk_pin 
 Related violations: <none>
