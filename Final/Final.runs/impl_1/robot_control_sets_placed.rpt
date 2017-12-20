@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Mon Dec 18 15:42:52 2017
-| Host         : Rupesh-Laptop running 64-bit major release  (build 9200)
+| Date         : Tue Dec 19 20:15:51 2017
+| Host         : MADCAP running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file robot_control_sets_placed.rpt
 | Design       : robot
 | Device       : xc7z010
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     7 |
-| Unused register locations in slices containing registers |    31 |
+| Number of unique control sets                            |     9 |
+| Unused register locations in slices containing registers |    37 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,11 +33,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              14 |            4 |
-| No           | No                    | Yes                    |              11 |            4 |
-| No           | Yes                   | No                     |              10 |            2 |
+| No           | No                    | No                     |              23 |            9 |
+| No           | No                    | Yes                    |               8 |            4 |
+| No           | Yes                   | No                     |              10 |            3 |
 | Yes          | No                    | No                     |              10 |            3 |
-| Yes          | No                    | Yes                    |              12 |            4 |
+| Yes          | No                    | Yes                    |              16 |            6 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -49,24 +49,26 @@ Table of Contents
 |  Clock Signal  |    Enable Signal   | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +----------------+--------------------+------------------+------------------+----------------+
 |  clk_IBUF_BUFG | cd115200/div       | rst_IBUF         |                1 |              1 |
-|  clk_IBUF_BUFG | dir1_i_1_n_0       |                  |                1 |              2 |
-|  clk_IBUF_BUFG | uart_dut/r_x/char0 |                  |                2 |              8 |
-|  clk_IBUF_BUFG |                    | cd115200/div     |                2 |             10 |
-|  clk_IBUF_BUFG |                    | rst_IBUF         |                4 |             11 |
-|  clk_IBUF_BUFG | uart_dut/r_x/d0    | rst_IBUF         |                3 |             11 |
-|  clk_IBUF_BUFG |                    |                  |                4 |             14 |
+|  clk_IBUF_BUFG | dir10              |                  |                1 |              1 |
+|  clk_IBUF_BUFG | dir20              |                  |                1 |              1 |
+|  clk_IBUF_BUFG | uart_dut/r_x/E[0]  | rst_IBUF         |                1 |              4 |
+|  clk_IBUF_BUFG |                    | rst_IBUF         |                4 |              8 |
+|  clk_IBUF_BUFG | uart_dut/r_x/char0 |                  |                1 |              8 |
+|  clk_IBUF_BUFG |                    | cd115200/div     |                3 |             10 |
+|  clk_IBUF_BUFG | uart_dut/r_x/d0    | rst_IBUF         |                4 |             11 |
+|  clk_IBUF_BUFG |                    |                  |                9 |             23 |
 +----------------+--------------------+------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
-| 1      |                     1 |
-| 2      |                     1 |
-| 8      |                     1 |
+| 1      |                     3 |
+| 4      |                     1 |
+| 8      |                     2 |
 | 10     |                     1 |
-| 11     |                     2 |
-| 14     |                     1 |
+| 11     |                     1 |
+| 16+    |                     1 |
 +--------+-----------------------+
 
 

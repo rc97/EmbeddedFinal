@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Classes/Embedded/EmbeddedFinal/Final/Final.runs/synth_1'
+HD_PWD='C:/CodingProjects/EmbeddedFinal/Final/Final.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

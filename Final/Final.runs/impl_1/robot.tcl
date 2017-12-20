@@ -51,12 +51,12 @@ set rc [catch {
   create_project -in_memory -part xc7z010clg400-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir D:/Classes/Embedded/EmbeddedFinal/Final/Final.cache/wt [current_project]
-  set_property parent.project_path D:/Classes/Embedded/EmbeddedFinal/Final/Final.xpr [current_project]
-  set_property ip_output_repo D:/Classes/Embedded/EmbeddedFinal/Final/Final.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/CodingProjects/EmbeddedFinal/Final/Final.cache/wt [current_project]
+  set_property parent.project_path C:/CodingProjects/EmbeddedFinal/Final/Final.xpr [current_project]
+  set_property ip_output_repo C:/CodingProjects/EmbeddedFinal/Final/Final.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet D:/Classes/Embedded/EmbeddedFinal/Final/Final.runs/synth_1/robot.dcp
-  read_xdc D:/Classes/Embedded/EmbeddedFinal/Final/Final.srcs/constrs_1/imports/Downloads/ZYBO_Master.xdc
+  add_files -quiet C:/CodingProjects/EmbeddedFinal/Final/Final.runs/synth_1/robot.dcp
+  read_xdc C:/CodingProjects/EmbeddedFinal/Final/Final.srcs/constrs_1/imports/Downloads/ZYBO_Master.xdc
   link_design -top robot -part xc7z010clg400-1
   close_msg_db -file init_design.pb
 } RESULT]

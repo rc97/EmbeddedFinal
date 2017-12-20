@@ -14,24 +14,25 @@ if __name__ == '__main__':
 	pygame.key.set_repeat(1, 1)
 	s = serial.Serial(port=port, baudrate=baud)
 	while(True):
-		cmd = 's'
+		cmd = 5
 		keys = pygame.key.get_pressed()
 		if keys[pygame.K_UP]:
-			cmd = 'u'
+			cmd = 8
 			# print('up')
 		elif keys[pygame.K_DOWN]:
-			cmd = 'd'
+			cmd = 2
 			# print('down')
+
 		if keys[pygame.K_LEFT]:
-			cmd = 'l'
+			cmd -= 1
 			# print('left')
 		elif keys[pygame.K_RIGHT]:
-			cmd = 'r'
+			cmd += 1
 			# print('right')
 
 		print(cmd)
 		# If any other key is pressed, assume stop
-		s.write(cmd.encode())
+		s.write(str(cmd).encode())
 
 		if keys[pygame.K_q]:
 			pygame.quit()

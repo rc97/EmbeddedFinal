@@ -38,7 +38,7 @@ architecture bot of robot is
     
     signal speed: unsigned(7 downto 0) := to_unsigned(200, 8);
     
-    type state is (u, d, l, r, s);
+    type state is (s, u, d, l, r, ul, ur, dl, dr);
     signal curr: state := s;
 begin
     pwm1: pwm port map(
@@ -72,18 +72,29 @@ begin
         elsif rising_edge(clk) then
             if newChar = '1' then
                 case charRec is
-                    when "01110101" => -- u
-                        curr <= u;
-                    when "01100100" => -- d
+                    when "00110001" => -- 
+                        curr <= dl;
+                    when "00110010" => -- 
                         curr <= d;
-                    when "01101100" => -- l
+                    when "00110011" => -- 
+                        curr <= dr;
+                    when "00110100" => -- 
                         curr <= l;
-                    when "01110010" => -- r
+                    when "00110101" => -- 
+                        curr <= s;
+                    when "00110110" => -- 
                         curr <= r;
+                    when "00110111" => -- 
+                        curr <= ul;
+                    when "00111000" => -- 
+                        curr <= u;
+                    when "00111001" => -- 
+                        curr <= ur;
                     when others =>
                         curr <= s;
                 end case;
             end if;
+            -- left wheel is 2, right wheel is 1
             case curr is
                 when s =>
                     sp1 <= (others => '0');
@@ -91,23 +102,39 @@ begin
                 when u =>
                     sp1 <= speed;
                     sp2 <= speed;
-                    dir1 <= '1';
+                    dir1 <= '0';
                     dir2 <= '0';
                 when d =>
                     sp1 <= speed;
                     sp2 <= speed;
-                    dir1 <= '0';
+                    dir1 <= '1';
                     dir2 <= '1';
                 when l =>
                     sp1 <= speed;
                     sp2 <= speed;
                     dir1 <= '1';
-                    dir2 <= '1';
+                    dir2 <= '0';
                 when r =>
                     sp1 <= speed;
                     sp2 <= speed;
                     dir1 <= '0';
+                    dir2 <= '1';
+                when ul => 
+                    sp1 <= (others => '0');
+                    sp2 <= speed;
                     dir2 <= '0';
+                when ur =>
+                    sp1 <= speed;
+                    sp2 <= (others => '0');
+                    dir1 <= '0';
+                when dl => 
+                    sp1 <= (others => '0');
+                    sp2 <= speed;
+                    dir2 <= '1';
+                when dr =>
+                    sp1 <= speed;
+                    sp2 <= (others => '0');
+                    dir1 <= '1';
             end case;
         end if;
     end process;
